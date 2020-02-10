@@ -40,9 +40,6 @@ function progressbar(v, m)
 			if (e = document.getElementById('operato'))
 			 	e.innerHTML = String.format(data.operator_name);
 
-			if (e = document.getElementById('signa'))
-			 	e.innerHTML = String.format(data.signal+"%");
-
 			if (e = document.getElementById('signapower'))
 				e.innerHTML = progressbar(
 					(data.signal) + "%",
@@ -54,27 +51,6 @@ function progressbar(v, m)
 
 			if (e = document.getElementById('operator_mc'))
 			 	e.innerHTML = String.format(data.operator_mcc);
-
-			if (e = document.getElementById('cs'))
-			 	e.innerHTML = String.format(data.csq);
-
-			if (e = document.getElementById('rss'))
-			 	e.innerHTML = String.format(data.rssi);
-
-			if (e = document.getElementById('lac_he'))
-			 	e.innerHTML = String.format(data.lac_hex);
-
-			if (e = document.getElementById('lac_de'))
-			 	e.innerHTML = String.format(data.lac_dec);
-
-			if (e = document.getElementById('cid_he'))
-			 	e.innerHTML = String.format(data.cid_hex);
-
-			if (e = document.getElementById('cid_de'))
-			 	e.innerHTML = String.format(data.cid_dec);
-
-			if (e = document.getElementById('rsrq'))
-			 	e.innerHTML = String.format(data.rsrq);
 
 		}
 	);
@@ -91,21 +67,8 @@ function progressbar(v, m)
 		<div class="tr"><div class="td left" width="33%">Tryb pracy: </div><div class="td left" id="mod">-</div></div>
 		<div class="tr"><div class="td left" width="33%">Operator: </div><div class="td left" id="operato">-</div></div>
 		<div class="tr"><div class="td left" width="33%"><%:Siła sygnału:%></div><div class="td left" id="signapower">-</div></div>
-	</div>
-
-	<div class="table" width="100%">
-	</div>
-
-	<div class="table" width="100%">
 		<div class="tr"><div class="td left" width="33%">Typ modemu: </div><div class="td left" id="devic">-</div></div>
-		<div class="tr"><div class="td left" width="33%">MCC MNC: </div><div class="td left" id="operator_mc">-</div></div>
-		<div class="tr"><div class="td left" width="33%">CSQ: </div><div class="td left" id="cs">-</div></div>
-		<div class="tr"><div class="td left" width="33%">RSSI: </div><div class="td left" id="rss">-</div></div>
-		<div class="tr"><div class="td left" width="33%">LAC(HEX): </div><div class="td left" id="lac_he">-</div></div>
-		<div class="tr"><div class="td left" width="33%">LAC(DEC): </div><div class="td left" id="lac_de">-</div></div>
-		<div class="tr"><div class="td left" width="33%">CID(HEX): </div><div class="td left" id="cid_he">-</div></div>
-		<div class="tr"><div class="td left" width="33%">CID(DEC): </div><div class="td left" id="cid_de">-</div></div>
-		<div class="tr"><div class="td left" width="33%">RSRQ: </div><div class="td left" id="rsrq">-</div></div>
 	</div>
+
 </div>
 <%+footer%>
