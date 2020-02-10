@@ -2,4 +2,4 @@
 
 # Screenshot
 
-![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen.png)
+![](https://raw.githubusercontent.com/IceG2020/luci-app-3ginfo/master/screen2.png)
