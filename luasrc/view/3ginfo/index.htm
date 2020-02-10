@@ -40,6 +40,9 @@ function progressbar(v, m)
 			if (e = document.getElementById('operato'))
 			 	e.innerHTML = String.format(data.operator_name);
 
+			if (e = document.getElementById('signa'))
+			 	e.innerHTML = String.format(data.signal+"%");
+
 			if (e = document.getElementById('signapower'))
 				e.innerHTML = progressbar(
 					(data.signal) + "%",
@@ -54,8 +57,8 @@ function progressbar(v, m)
 //]]></script>
 
 <div class="cbi-section">
-	<h2 name="content"><%:3ginfo%></h2>
-	<h4 name="content"><%:Informacja o statusie połączenia 3G/4G%></h4>
+	<h2>3ginfo</h2>
+	<h4>Informacja o statusie połączenia 3G/4G</h4>
 	<div class="table" width="100%">
 		<div class="tr"><div class="td left" width="33%">Status: </div><div class="td left" id="statu">-</div></div>
 		<div class="tr"><div class="td left" width="33%">Czas połączenia: </div><div class="td left" id="conn_tim">-</div></div>
@@ -66,6 +69,5 @@ function progressbar(v, m)
 		<div class="tr"><div class="td left" width="33%"><%:Siła sygnału:%></div><div class="td left" id="signapower">-</div></div>
 		<div class="tr"><div class="td left" width="33%">Typ modemu: </div><div class="td left" id="devic">-</div></div>
 	</div>
-
 </div>
 <%+footer%>
