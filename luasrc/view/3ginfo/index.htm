@@ -1,0 +1,73 @@
+<%+header%>
+<script type="text/javascript">//<![CDATA[
+
+function progressbar(v, m)
+	{
+		var vn = parseInt(v) || 0;
+		var mn = parseInt(m) || 100;
+		var pc = Math.floor((100 / mn) * vn);
+
+		return String.format(
+			'<div style="width:100%%; max-width:250px; position:relative; border:1px solid #999999">' +
+				'<div style="background-color: #00FF00; width:%d%%; height:15px">' +
+					'<div style="position:absolute; left:0; top:0; text-align:center; width:100%%; color:#000000">' +
+						'<small>%s / %s (%d%%)</small>' +
+					'</div>' +
+				'</div>' +
+			'</div>', pc, v, m, pc
+		);
+	}
+
+	XHR.poll(0, '<%=build_url("admin/3ginfo/device/devicedata")%>', null,
+		function(x, data)
+		{
+
+			if (e = document.getElementById('statu'))
+			 	e.innerHTML = String.format(data.status);
+
+			if (e = document.getElementById('conn_tim'))
+			 	e.innerHTML = String.format(data.conn_time);
+
+			if (e = document.getElementById('iface_rx'))
+			 	e.innerHTML = String.format(data.iface_rx);
+
+			if (e = document.getElementById('iface_tx'))
+			 	e.innerHTML = String.format(data.iface_tx);
+
+			if (e = document.getElementById('mod'))
+			 	e.innerHTML = String.format(data.mode);
+
+			if (e = document.getElementById('operato'))
+			 	e.innerHTML = String.format(data.operator_name);
+
+			if (e = document.getElementById('signa'))
+			 	e.innerHTML = String.format(data.signal+"%");
+
+			if (e = document.getElementById('signapower'))
+				e.innerHTML = progressbar(
+					(data.signal) + "%",
+					(100) + "%"
+				);
+
+			if (e = document.getElementById('devic'))
+			 	e.innerHTML = String.format(data.device);
+
+		}
+	);
+//]]></script>
+
+<div class="cbi-section">
+	<h3>Informacja o statusie połączenia 3G/4G</h3>
+
+	<div class="table" width="100%">
+		<div class="tr"><div class="td left" width="33%">Status: </div><div class="td left" id="statu">-</div></div>
+		<div class="tr"><div class="td left" width="33%">Czas połączenia: </div><div class="td left" id="conn_tim">-</div></div>
+		<div class="tr"><div class="td left" width="33%">Pobrano: </div><div class="td left" id="iface_rx">-</div></div>
+		<div class="tr"><div class="td left" width="33%">Wysłano: </div><div class="td left" id="iface_tx">-</div></div>
+		<div class="tr"><div class="td left" width="33%">Tryb pracy: </div><div class="td left" id="mod">-</div></div>
+		<div class="tr"><div class="td left" width="33%">Operator: </div><div class="td left" id="operato">-</div></div>
+		<div class="tr"><div class="td left" width="33%"><%:Siła sygnału:%></div><div class="td left" id="signapower">-</div></div>
+		<div class="tr"><div class="td left" width="33%">Urządzenie: </div><div class="td left" id="devic">-</div></div>
+	</div>
+</div>
+<%+footer%>
