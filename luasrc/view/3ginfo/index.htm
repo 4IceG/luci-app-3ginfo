@@ -53,7 +53,10 @@ function progressbar(v, m)
 			 	e.innerHTML = String.format(data.device);
 
 
-			if (e = document.getElementById('omc'))
+			if (e = document.getElementById('omcc'))
+			 	e.innerHTML = String.format(data.operator_mcc);
+
+			if (e = document.getElementById('omnc'))
 			 	e.innerHTML = String.format(data.operator_mnc);
 
 			if (e = document.getElementById('cs'))
@@ -101,7 +104,8 @@ function progressbar(v, m)
 
 	<div class="table" width="100%">
 
-		<div class="tr"><div class="td left" width="33%">MCC MNC: </div><div class="td left" id="omc">-</div></div>
+		<div class="tr"><div class="td left" width="33%">MCC: </div><div class="td left" id="omcc">-</div></div>
+		<div class="tr"><div class="td left" width="33%">MNC: </div><div class="td left" id="omnc">-</div></div>
 		<div class="tr"><div class="td left" width="33%">CSQ: </div><div class="td left" id="cs">-</div></div>
 		<div class="tr"><div class="td left" width="33%">RSSI: </div><div class="td left" id="rss">-</div></div>
 		<div class="tr"><div class="td left" width="33%">RSRQ: </div><div class="td left" id="rsr">-</div></div>
