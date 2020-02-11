@@ -60,7 +60,7 @@ function progressbar(v, m)
 			 	e.innerHTML = String.format(data.csq);
 
 			if (e = document.getElementById('rss'))
-			 	e.innerHTML = String.format(data.rssi);
+			 	e.innerHTML = String.format(data.rssi + " dBm");
 
 			if (e = document.getElementById('lac_he'))
 			 	e.innerHTML = String.format(data.lac_hex  + '(' + data.lac_dec + ')' );
@@ -71,7 +71,7 @@ function progressbar(v, m)
 
 
 			if (e = document.getElementById('rsr'))
-			 	e.innerHTML = String.format(data.rsrq);
+			 	e.innerHTML = String.format(data.rsrq + " dB");
 
 		}
 	);
