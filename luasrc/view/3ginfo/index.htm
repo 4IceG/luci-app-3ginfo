@@ -1,4 +1,5 @@
 <%+header%>
+
 <script type="text/javascript">//<![CDATA[
 
 function progressbar(v, m)
@@ -8,8 +9,8 @@ function progressbar(v, m)
 		var pc = Math.floor((100 / mn) * vn);
 
 		return String.format(
-			'<div style="width:100%%; max-width:250px; position:relative; border:1px solid #999999">' +
-				'<div style="background-color: #90c0e0; width:%d%%; height:15px">' +
+			'<div style="width:100%%; max-width:250px; position:relative; border:1px solid #0272c6; border-radius: 9px">' +
+				'<div style="background-color: #55c6f9; width:%d%%; height:18px; border-radius: 8px">' +
 					'<div style="position:absolute; left:0; top:0; text-align:center; width:100%%; color:#000000">' +
 						'<small>%s / %s (%d%%)</small>' +
 					'</div>' +
@@ -54,7 +55,7 @@ function progressbar(v, m)
 
 
 			if (e = document.getElementById('omcc'))
-			 	e.innerHTML = String.format(data.operator_mcc  + '(' + data.operator_mnc + ')' );
+			 	e.innerHTML = String.format(data.operator_mcc  + ' (' + data.operator_mnc + ')' );
 
 			if (e = document.getElementById('cs'))
 			 	e.innerHTML = String.format(data.csq);
@@ -63,11 +64,11 @@ function progressbar(v, m)
 			 	e.innerHTML = String.format(data.rssi + " dBm");
 
 			if (e = document.getElementById('lac_he'))
-			 	e.innerHTML = String.format(data.lac_hex  + '(' + data.lac_dec + ')' );
+			 	e.innerHTML = String.format(data.lac_hex  + ' (' + data.lac_dec + ')' );
 
 
 			if (e = document.getElementById('cid_he'))
-			 	e.innerHTML = String.format(data.cid_hex   + '(' + data.cid_dec + ')' );
+			 	e.innerHTML = String.format(data.cid_hex   + ' (' + data.cid_dec + ')' );
 
 
 			if (e = document.getElementById('rsr'))
