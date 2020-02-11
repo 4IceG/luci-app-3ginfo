@@ -54,10 +54,7 @@ function progressbar(v, m)
 
 
 			if (e = document.getElementById('omcc'))
-			 	e.innerHTML = String.format(data.operator_mcc);
-
-			if (e = document.getElementById('omnc'))
-			 	e.innerHTML = String.format(data.operator_mnc);
+			 	e.innerHTML = String.format(data.operator_mcc  + '(' + data.operator_mnc + ')' );
 
 			if (e = document.getElementById('cs'))
 			 	e.innerHTML = String.format(data.csq);
@@ -66,16 +63,12 @@ function progressbar(v, m)
 			 	e.innerHTML = String.format(data.rssi);
 
 			if (e = document.getElementById('lac_he'))
-			 	e.innerHTML = String.format(data.lac_hex);
+			 	e.innerHTML = String.format(data.lac_hex  + '(' + data.lac_dec + ')' );
 
-			if (e = document.getElementById('lac_de'))
-			 	e.innerHTML = String.format(data.lac_dec);
 
 			if (e = document.getElementById('cid_he'))
-			 	e.innerHTML = String.format(data.cid_hex);
+			 	e.innerHTML = String.format(data.cid_hex   + '(' + data.cid_dec + ')' );
 
-			if (e = document.getElementById('cid_de'))
-			 	e.innerHTML = String.format(data.cid_dec);
 
 			if (e = document.getElementById('rsr'))
 			 	e.innerHTML = String.format(data.rsrq);
@@ -104,15 +97,13 @@ function progressbar(v, m)
 
 	<div class="table" width="100%">
 
-		<div class="tr"><div class="td left" width="33%">MCC: </div><div class="td left" id="omcc">-</div></div>
-		<div class="tr"><div class="td left" width="33%">MNC: </div><div class="td left" id="omnc">-</div></div>
+		<div class="tr"><div class="td left" width="33%">MCC MNC: </div><div class="td left" id="omcc">-</div></div>
 		<div class="tr"><div class="td left" width="33%">CSQ: </div><div class="td left" id="cs">-</div></div>
 		<div class="tr"><div class="td left" width="33%">RSSI: </div><div class="td left" id="rss">-</div></div>
 		<div class="tr"><div class="td left" width="33%">RSRQ: </div><div class="td left" id="rsr">-</div></div>
-		<div class="tr"><div class="td left" width="33%">LAC(HEX): </div><div class="td left" id="lac_he">-</div></div>
-		<div class="tr"><div class="td left" width="33%">LAC(DEC): </div><div class="td left" id="lac_de">-</div></div>
-		<div class="tr"><div class="td left" width="33%">CID(HEX): </div><div class="td left" id="cid_he">-</div></div>
-		<div class="tr"><div class="td left" width="33%">CID(DEC): </div><div class="td left" id="cid_de">-</div></div>
+		<div class="tr"><div class="td left" width="33%">LAC: </div><div class="td left" id="lac_he">-</div></div>
+		<div class="tr"><div class="td left" width="33%">CID: </div><div class="td left" id="cid_he">-</div></div>
+
 
 	</div>
 
