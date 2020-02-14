@@ -6,7 +6,7 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=LuCI panel for 3ginfo
 LUCI_PKGARCH:=all
 DEPENDS:=+3ginfo-text
-PKG_VERSION:=1.1
+PKG_VERSION:=1.2
 PKG_RELEASE:=4
 
 include $(TOPDIR)/feeds/luci/luci.mk
