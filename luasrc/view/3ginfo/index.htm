@@ -61,7 +61,7 @@ XHR.poll(0, '<%=build_url("admin/3ginfo/device/devicedata")%>', null,
 
 
 			if (e = document.getElementById('omcc'))
-			 	e.innerHTML = String.format(data.operator_mcc  + ' (' + data.operator_mnc + ')' );
+			 	e.innerHTML = String.format(data.operator_mcc  + " " + data.operator_mnc);
 
 			if (e = document.getElementById('cs'))
 			 	e.innerHTML = String.format(data.csq);
