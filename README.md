@@ -21,11 +21,11 @@ opkg install luci-app-3ginfo_1.3_all.ipk
 
 # Screenshots
 - Main window:
-![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen1.PNG)
+![](https://raw.githubusercontent.com/IceG2020/luci-app-3ginfo/master/screen1m.PNG)
 
 - "Additional information" window:
-![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen2.PNG)
+![](https://raw.githubusercontent.com/IceG2020/luci-app-3ginfo/master/screen2m.PNG)
 
 - Configuration window:
-![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen3.PNG)
+![](https://raw.githubusercontent.com/IceG2020/luci-app-3ginfo/master/screen3m.PNG)
 
