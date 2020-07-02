@@ -16,13 +16,17 @@ Configuration window:
 
 # Installation
 Modem drivers are required for proper operation.
+
 opkg install kmod-usb-serial kmod-usb-serial-option
 
 Install 3ginfo text version.
+
 opkg install 3ginfo-text.ipk
 
 Install this package for qmi modems.
+
 opkg install 3ginfo-qmisignal_20171227_all.ipk
 
 Install gui.
+
 opkg install luci-app-3ginfo_1.3_all.ipk
