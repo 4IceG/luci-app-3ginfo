@@ -7,8 +7,10 @@ Works with mPCI-E and USB 3G/LTE modems.
 # Screenshots
 Main window:
 ![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen1.PNG)
+
 "Additional information" window:
 ![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen2.PNG)
+
 Configuration window:
 ![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen3.PNG)
 
