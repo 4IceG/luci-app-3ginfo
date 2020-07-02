@@ -14,19 +14,17 @@ Main window:
 Configuration window:
 ![](https://github.com/IceG2020/luci-app-3ginfo/blob/master/screen3.PNG)
 
-# Installation
-Modem drivers are required for proper operation.
 
+# Installation
+``` bash
+#Modem drivers are required for proper operation.
 opkg install kmod-usb-serial kmod-usb-serial-option
 
-Install 3ginfo text version.
-
+#Install 3ginfo text version.
 opkg install 3ginfo-text.ipk
 
-Install this package for qmi modems.
-
+#Install this package for qmi modems.
 opkg install 3ginfo-qmisignal_20171227_all.ipk
 
-Install gui.
-
+#Install gui.
 opkg install luci-app-3ginfo_1.3_all.ipk
