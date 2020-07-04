@@ -1,5 +1,7 @@
 # luci-app-3ginfo
 
+![GitHub All Releases](https://img.shields.io/github/downloads/IceG2020/luci-app-3ginfo/total)
+
 Luci-app-3ginfo is a GUI for 3ginfo application/project https://eko.one.pl/?p=openwrt-3ginfo
 
 Works with mPCI-E and USB 3G/LTE modems.
