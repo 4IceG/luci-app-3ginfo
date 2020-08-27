@@ -62,17 +62,17 @@ msgid "Configuration panel for the 3ginfo application."
 msgstr ""
 
 #: applications/luci-app-3ginfo/luasrc/model/cbi/modem/3gconfig.lua:17
-msgid "Network: "
+msgid "Network"
 msgstr ""
 
 #: applications/luci-app-3ginfo/luasrc/model/cbi/modem/3gconfig.lua:20
-msgid "Device: "
+msgid "Device"
 msgstr ""
 
 #: applications/luci-app-3ginfo/luasrc/model/cbi/modem/3gconfig.lua:28
-msgid "SIM PIN (optional): "
+msgid "SIM PIN (optional)"
 msgstr ""
 
 #: applications/luci-app-3ginfo/luasrc/model/cbi/modem/3gconfig.lua:31
-msgid "Language: "
+msgid "Language"
 msgstr ""
