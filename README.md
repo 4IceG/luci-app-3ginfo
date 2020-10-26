@@ -1,6 +1,5 @@
 ## Luci-app-3ginfo
 
-![GitHub All Releases](https://img.shields.io/github/downloads/IceG2020/luci-app-3ginfo/total)
 ![GitHub stars](https://img.shields.io/github/stars/IceG2020/luci-app-3ginfo?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/IceG2020/luci-app-3ginfo?style=flat-square)
 
