@@ -12,7 +12,7 @@ Works with mPCI-E and USB 3G/LTE modems.
 ## Installation
 ``` bash
 #Modem drivers are required for proper operation.
-opkg install kmod-usb-serial kmod-usb-serial-option
+opkg install kmod-usb-serial kmod-usb-serial-option luci-compat
 
 #Install 3ginfo text version.
 opkg install 3ginfo-text.ipk
