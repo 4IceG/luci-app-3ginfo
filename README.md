@@ -24,12 +24,6 @@ opkg install 3ginfo-qmisignal_20171227_all.ipk
 opkg install luci-app-3ginfo_1.3_all.ipk
 ```
 
-## Screenshots
+### Preview and quick configuration (modem Quectel EM12-G) / Podgląd oraz szybka konfiguracja (modem Quectel EM12-G)
 
-- Main window:
-
-![](https://raw.githubusercontent.com/4IceG/luci-app-3ginfo/master/screen/3ginfo.png)
-
-- Configuration window:
-
-![](https://raw.githubusercontent.com/4IceG/luci-app-3ginfo/master/screen/3ginfo_3gconfig.png)
+![](https://raw.githubusercontent.com/4IceG/Personal_data/master/3ginfo.gif)
