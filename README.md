@@ -15,13 +15,13 @@ Works with mPCI-E and USB 3G/LTE modems.
 opkg install kmod-usb-serial kmod-usb-serial-option luci-compat
 
 #Install 3ginfo text version.
-opkg install 3ginfo-text.ipk
+opkg install 3ginfo-text_20171227_all.ipk
 
 #Install this package for qmi modems.
 opkg install 3ginfo-qmisignal_20171227_all.ipk
 
 #Install gui.
-opkg install luci-app-3ginfo_1.3_all.ipk
+opkg install luci-app-3ginfo_1.3.2_all.ipk
 ```
 
 ### Preview and quick configuration (modem Quectel EM12-G) / Podgląd oraz szybka konfiguracja (modem Quectel EM12-G)
