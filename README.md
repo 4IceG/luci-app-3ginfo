@@ -5,11 +5,13 @@
 ![GitHub forks](https://img.shields.io/github/forks/IceG2020/luci-app-3ginfo?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/4IceG/luci-app-3ginfo/total)
 
-Luci-app-3ginfo is a GUI for 3ginfo application/project https://eko.one.pl/?p=openwrt-3ginfo
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="32">
+Luci-app-3ginfo is a GUI for 3ginfo application/project https://eko.one.pl/?p=openwrt-3ginfo. Works with mPCI-E and USB 3G/LTE modems.
 
-Works with mPCI-E and USB 3G/LTE modems.
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32">
+Luci-app-3ginfo jest prostym interfejsem użytkownika dla projetu/aplikacji https://eko.one.pl/?p=openwrt-3ginfo. Działa na modemach mPCI-E oraz USB 3G/LTE.
 
-## Installation
+## <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="32"> Installation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32"> Instalacja
 ``` bash
 #Modem drivers are required for proper operation.
 opkg install kmod-usb-serial kmod-usb-serial-option luci-compat
@@ -24,6 +26,6 @@ opkg install 3ginfo-qmisignal_20190418_all.ipk
 opkg install luci-app-3ginfo_1.3.3_all.ipk
 ```
 
-### Preview and quick configuration (modem Quectel EM12-G) / Podgląd oraz szybka konfiguracja (modem Quectel EM12-G)
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="32"> Preview and quick configuration (modem Quectel EM12-G) / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32"> Podgląd oraz szybka konfiguracja (modem Quectel EM12-G)
 
 ![](https://raw.githubusercontent.com/4IceG/Personal_data/master/3ginfo.gif)
