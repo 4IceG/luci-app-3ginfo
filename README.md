@@ -9,7 +9,7 @@
 Luci-app-3ginfo is a GUI for 3ginfo application/project https://eko.one.pl/?p=openwrt-3ginfo. Works with mPCI-E and USB 3G/LTE modems.
 
 ### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32">
-Luci-app-3ginfo jest prostym interfejsem użytkownika dla projetu/aplikacji https://eko.one.pl/?p=openwrt-3ginfo. Działa na modemach mPCI-E oraz USB 3G/LTE.
+Luci-app-3ginfo jest prostym interfejsem użytkownika dla projektu/aplikacji https://eko.one.pl/?p=openwrt-3ginfo. Działa na modemach mPCI-E oraz USB 3G/LTE.
 
 ## <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="32"> Installation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32"> Instalacja
 ``` bash
