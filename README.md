@@ -13,16 +13,20 @@ Luci-app-3ginfo jest prostym interfejsem użytkownika dla projektu/aplikacji htt
 
 ## <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="32"> Installation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32"> Instalacja
 ``` bash
-#Modem drivers are required for proper operation.
-opkg install kmod-usb-serial kmod-usb-serial-option luci-compat
+> For conventional modems.
+Modem drivers are required for proper operation.
+opkg install kmod-usb-serial kmod-usb-serial-option
 
-#Install 3ginfo text version.
+> For Huawei HiLink modems.
+opkg install wget-nossl
+
+Install 3ginfo text version.
 opkg install 3ginfo-text_20190418_all.ipk
 
-#Install this package for qmi modems.
+Install this package for qmi modems.
 opkg install 3ginfo-qmisignal_20190418_all.ipk
 
-#Install gui.
+Install gui.
 opkg install luci-app-3ginfo_1.3.3_all.ipk
 ```
 
