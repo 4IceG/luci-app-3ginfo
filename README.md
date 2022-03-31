@@ -21,13 +21,16 @@ opkg install kmod-usb-serial kmod-usb-serial-option
 opkg install wget-nossl
 
 Install 3ginfo text version.
-opkg install 3ginfo-text_20190418_all.ipk
+wget https://github.com/4IceG/luci-app-3ginfo/releases/download/1.3.3/3ginfo-text_20190418_all.ipk -O /tmp/3ginfo-text_20190418_all.ipk
+opkg install /tmp/3ginfo-text_20190418_all.ipk
 
 Install this package for qmi modems.
-opkg install 3ginfo-qmisignal_20190418_all.ipk
+wget https://github.com/4IceG/luci-app-3ginfo/releases/download/1.3.3/3ginfo-qmisignal_20190418_all.ipk -O /tmp/3ginfo-qmisignal_20190418_all.ipk
+opkg install /tmp/3ginfo-qmisignal_20190418_all.ipk
 
 Install gui.
-opkg install luci-app-3ginfo_1.3.3_all.ipk
+wget https://github.com/4IceG/luci-app-3ginfo/releases/download/1.3.3/luci-app-3ginfo_1.3.3-1_all.ipk -O /tmp/luci-app-3ginfo_1.3.3-1_all.ipk
+opkg install /tmp/luci-app-3ginfo_1.3.3-1_all.ipk
 ```
 
 ### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="32"> Preview and quick configuration (modem Quectel EM12-G) / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="32"> Podgląd oraz szybka konfiguracja (modem Quectel EM12-G)
