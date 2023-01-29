@@ -36,7 +36,7 @@ XHR.poll(0, '<%=build_url("admin/modem/3ginfo/devicedata")%>', null,
 
 					if (e = document.getElementById('signal'))
 					if (e)
-						e.innerHTML = String.format('<medium>%d%%</medium></br>' + '<img style="padding-left: 10px;" src="%s"/>', p, icon2);
+						e.innerHTML = String.format('<medium>%d%%</medium><br/>' + '<img style="padding-left: 10px;" src="%s"/>', p, icon2);
 
 
 			if (e = document.getElementById('statu'))
@@ -149,9 +149,9 @@ XHR.poll(0, '<%=build_url("admin/modem/3ginfo/devicedata")%>', null,
 
 	</div>
 
-</div>
-
 </details>
+
+</div>
 
 
 <%+footer%>
